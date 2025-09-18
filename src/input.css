@@ -1,0 +1,12 @@
+@import "tailwindcss";
+.bg-blue-img{
+    background:url(img/banner-bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-red-line{
+    background: url(img/caption-dec.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 200%;
+}
