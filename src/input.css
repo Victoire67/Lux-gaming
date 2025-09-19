@@ -10,3 +10,6 @@
     background-position-y: bottom;
     background-size: 200%;
 }
+.rounded-bg{
+    border-radius: 0% 0% 30% 30%;
+}
