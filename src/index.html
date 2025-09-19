@@ -15,10 +15,10 @@
                 <img class="h-8" src="img/logo.png" alt="">
             </div>
             <ul class="hidden sm:flex gap-4 text-white">
-                <li>Home</li>
-                <li>Our Shop</li>
-                <li>Products</li>
-                <li>Contacts Us</li>
+                <li class="py-2 px-4 rounded-4xl bg-blue-300 cursor-pointer">Home</li>
+                <li class="py-2 px-4 rounded-4xl hover:bg-blue-300 cursor-pointer b">Our Shop</li>
+                <li class="py-2 px-4 rounded-4xl hover:bg-blue-300 cursor-pointer b">Products</li>
+                <li class="py-2 px-4 rounded-4xl hover:bg-blue-300 cursor-pointer b">Contacts Us</li>
             </ul>
             <img class=" sm:hidden flex h-8" src="img/finalbars.png" alt="">
         </header>
@@ -32,8 +32,10 @@
                     this layout for commercial purposes. Please tell your friends about TemplateMo.</p>
                 <div
                     class="bg-white w-9/10 m-auto flex place-content-between rounded-3xl  items-center overflow-hidden">
-                    <input class="text-gray-400 mx-4 my-2" type="text" placeholder="Type Something">
-                    <button class="bg-red-500 p-3 px-4 rounded-l-3xl font-semibold">SEARCH NOW</button>
+                    <input class="text-gray-400 mx-4 my-2 w-[50%] focus:outline-none" type="text"
+                        placeholder="Type Something">
+                    <button class="bg-red-500 p-3 px-4 rounded-l-3xl font-semibold hover:bg-blue-500">SEARCH
+                        NOW</button>
                 </div>
             </section>
             <section class="m-auto relative  bg-white rounded-3xl overflow-hidden">
@@ -50,96 +52,112 @@
     </div>
     <section
         class="grid sm:flex relative bottom-16 sm:bottom-32 items-center sm:gap-4 sm:mx-16 place-content-center space-y-4 mt-4 ">
-        <div class=" p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center items-center bg-white shadow-2xl">
-            <div class="bg-blue-400 rounded-full w-18 aspect-square flex items-center m-auto place-content-center"><img
-                    class="w-12 h-12" src="img/featured-01.png" alt="feature 1"></div>
+        <div
+            class=" p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center items-center bg-white shadow-2xl group ">
+            <div
+                class="bg-blue-400 rounded-full w-18 aspect-square flex items-center m-auto place-content-center group-hover:bg-red-500">
+                <img class="w-12 h-12" src="img/featured-01.png" alt="feature 1">
+            </div>
             <h2 class="font-bold text-center">FREE STORAGE</h2>
         </div>
 
         <div
-            class="p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center items-center px-auto bg-white shadow-2xl">
-            <div class="bg-blue-400 rounded-full w-18 aspect-square flex items-center place-content-center"><img
-                    class="w-12 h-12" src="img/featured-02.png" alt="feature 2"></div>
+            class="p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center items-center px-auto bg-white shadow-2xl group">
+            <div
+                class="bg-blue-400 rounded-full w-18 aspect-square flex items-center place-content-center group-hover:bg-red-500">
+                <img class="w-12 h-12" src="img/featured-02.png" alt="feature 2">
+            </div>
             <h2 class="font-bold text-center">USER MORE</h2>
         </div>
 
-        <div class=" p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center bg-white shadow-2xl">
-            <div class="bg-blue-400 rounded-full w-18 m-auto aspect-square flex items-center place-content-center"><img
-                    class="w-12 h-12" src="img/featured-03.png" alt="feature 3"></div>
+        <div class=" p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center bg-white shadow-2xl group">
+            <div
+                class="bg-blue-400 rounded-full w-18 m-auto aspect-square flex items-center place-content-center group-hover:bg-red-500">
+                <img class="w-12 h-12" src="img/featured-03.png" alt="feature 3">
+            </div>
             <h2 class="font-bold text-center">REPLY MORE</h2>
         </div>
-        <div class=" p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center bg-white shadow-2xl">
-            <div class="bg-blue-400 m-auto rounded-full w-18 aspect-square flex items-center place-content-center"><img
-                    class="w-12 h-12" src="img/featured-04.png" alt="feature 4"></div>
+        <div class=" p-4 grid w-[430px] h-[150px] rounded-2xl place-content-center bg-white shadow-2xl group">
+            <div
+                class="bg-blue-400 m-auto rounded-full w-18 aspect-square flex items-center place-content-center group-hover:bg-red-500">
+                <img class="w-12 h-12" src="img/featured-04.png" alt="feature 4">
+            </div>
             <h2 class="font-bold text-center">EASY LAYOUT</h2>
         </div>
     </section>
     <section>
-        <h2 class="font-bold text-left text-red-400 ml-2">TRENDING</h2>
-        <h1 class="font-bold text-left text-4xl py-8 ml-2">Trending Games</h1>
+        <div class="flex place-content-between items-center mr-4 ">
+            <div>
+                <h2 class="font-bold text-left text-red-400 ml-2">TRENDING</h2>
+                <h1 class="font-bold text-left text-4xl py-8 ml-2">Trending Games</h1>
+            </div>
+            <button
+                class="bg-red-500 px-4 py-2 rounded-3xl text-white font-semibold hover:bg-blue-500 hidden md:flex">VIEW
+                ALL</button>
+        </div>
         <div class="grid gap-4 sm:mx-4 sm:grid-cols-2 grid-cols-1 mx-8  sm:grid-rows-2 md:flex">
-            <div class="grid w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden">
+            <div class="grid cursor-pointer w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden group">
                 <div
                     class="text-white absolute grid rounded-3xl top-2 right-0 mr-4 bg-blue-400 h-12 w-24 py-4 items-center place-content-center">
                     <h1 class="line-through">$28</h1>
                     <h1 class="font-bold text-xl">$20</h1>
                 </div>
                 <img class="h-[120px] w-[100%]" src="img/trendingame1.png" alt="">
-                <div class="flex place-content-between py-2 px-8 items-center">
+                <div class="flex place-content-between py-2 px-8 items-center group-hover:text-blue-400">
                     <div>
                         <p class="text-gray-500">Action</p>
                         <h2 class="font-semibold text-xl">Assasin Creed</h2>
                     </div>
-                    <div class="w-fit h-fit bg-red-400 rounded-full"><img class="h-10 w-10" src="img/addcart.png"
-                            alt=""></div>
+                    <div class="w-fit h-fit bg-red-400 rounded-full group-hover:bg-blue-400"><img class="h-10 w-10"
+                            src="img/addcart.png" alt=""></div>
                 </div>
             </div>
-            <div class="grid w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden">
+            <div class="grid cursor-pointer w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden group">
                 <div
                     class="text-white absolute grid rounded-full top-2 right-0 mr-4 bg-blue-400 h-12 w-24 items-center place-content-center">
                     <h1>$28</h1>
                     <h1>$20</h1>
                 </div>
                 <img class="h-[120px] w-[100%]" src="img/trendingame2.jpeg" alt="">
-                <div class="flex place-content-between py-2 px-8 items-center">
+                <div class="flex place-content-between py-2 px-8 items-center group-hover:text-blue-400">
                     <div>
                         <p class="text-gray-500">Action</p>
                         <h2 class="font-semibold text-xl">Assasin Creed</h2>
                     </div>
-                    <div class="w-fit h-fit bg-red-400 rounded-full"><img class="h-10 w-10" src="img/addcart.png"
-                            alt=""></div>
+                    <div class="w-fit h-fit bg-red-400 rounded-full group-hover:bg-blue-400"><img class="h-10 w-10"
+                            src="img/addcart.png" alt=""></div>
                 </div>
             </div>
-            <div class="grid w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden">
+            <div class="grid cursor-pointer w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden group">
                 <div
                     class="text-white absolute grid rounded-full top-2 right-0 mr-4 bg-blue-400 h-12 w-24 items-center place-content-center">
                     <h1>$28</h1>
                     <h1>$20</h1>
                 </div>
-                <img class="h-[120px] w-[100%]" src="img/trendingame3.jpeg" alt="">
-                <div class="flex place-content-between py-2 px-8 items-center">
+                <img class="h-[120px] w-[100%] group-hover:text-blue-400" src="img/trendingame3.jpeg" alt="">
+                <div class="flex place-content-between py-2 px-8 items-center group-hover:text-blue-400 ">
                     <div>
                         <p class="text-gray-500">Action</p>
                         <h2 class="font-semibold text-xl">Assasin Creed</h2>
                     </div>
-                    <div class="w-fit h-fit bg-red-400 rounded-full"><img class="h-10 w-10" src="img/addcart.png"
-                            alt=""></div>
+                    <div class="w-fit h-fit bg-red-400 rounded-full group-hover:bg-blue-400"><img class="h-10 w-10"
+                            src="img/addcart.png" alt=""></div>
                 </div>
             </div>
-            <div class="grid w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden">
+            <div class="grid cursor-pointer w-9/10 m-auto bg-gray-300 rounded-3xl relative overflow-hidden group">
                 <div
                     class="text-white absolute grid rounded-full top-2 right-0 mr-4 bg-blue-400 h-12 w-24 items-center place-content-center">
                     <h1>$28</h1>
                     <h1>$20</h1>
                 </div>
                 <img class="h-[120px] w-[100%]" src="img/trendingame4.png" alt="">
-                <div class="flex place-content-between py-2 px-8 items-center">
+                <div class="flex place-content-between py-2 px-8 items-center group-hover:text-blue-400">
                     <div>
                         <p class="text-gray-500">Action</p>
                         <h2 class="font-semibold text-xl">Assasin Creed</h2>
                     </div>
-                    <div class="w-fit h-fit bg-red-400 rounded-full"><img class="h-10 w-10" src="img/addcart.png"
-                            alt=""></div>
+                    <div class="w-fit h-fit bg-red-400 rounded-full group-hover:bg-blue-400 overflow-hidden"><img
+                            class="h-10 w-10 " src="img/addcart.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -204,45 +222,47 @@
         <h1 class="font-bold text-center text-4xl py-8 ml-2">Top Categories</h1>
 
         <div class="grid gap-4 sm:mx-4 sm:grid-cols-2 mx-8  sm:grid-rows-2">
-       <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
+            <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
                 <h1 class="py-4 h-1/10 ">Action</h1>
                 <img class="w-full h-full mx-auto rounded-3xl" src="img/topgame1.jpeg" alt="top1">
             </div>
             <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
                 <h1 class="py-4">Action</h1>
-                <img class="w-[450px] mx-auto rounded-3xl aspect-auto self-end" src="img/top-game-02.jpg.jpeg" alt="top1">
+                <img class="w-[450px] mx-auto rounded-3xl aspect-auto self-end" src="img/top-game-02.jpg.jpeg"
+                    alt="top1">
             </div>
-             <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
+            <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
                 <h1 class="py-4">Action</h1>
                 <img class="w-[450px] mx-auto rounded-3xl aspect-auto" src="img/top-game-03.jpg.jpeg" alt="top1">
             </div>
-             <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
+            <div class="mb-4  m-auto rounded-3xl bg-indigo-500 text-center font-semibold text-white text-2xl">
                 <h1 class="py-4">Action</h1>
                 <img class="w-[450px] mx-auto rounded-3xl aspect-auto" src="img/top-game-04.jpg.jpeg" alt="top1">
             </div>
         </div>
 
     </section>
-<div class="md:flex md:place-content-between md:mx-4 md:gap-32">
+    <div class="md:flex md:place-content-between md:mx-4 md:gap-32">
         <section class="text-left mt-16 m-auto w-9/10 bg-gray-300 rounded-3xl p-4">
-        <h2 class="font-bold text-xl text-red-400 ml-2">Our Shop</h2>
-        <h1 class="font-bold text-4xl py-8 ml-2">Go Pre-Order By & Get Best <span class="text-indigo-500">Prices</span>
-            For You !
-        </h1>
-        <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
-        <button class="bg-red-400 w-fit mt-4 px-8 py-2 rounded-3xl text-white font-semibold">SHOP NOW</button>
-    </section>
-    <img src="img/roboto.png" class="h-100 rounded-3xl absolute -z-1 left-[35%] hidden md:flex" alt="">
-     <section class="text-left mt-16 m-auto w-9/10 bg-gray-300 rounded-3xl p-4 grid">
-        <h2 class="font-bold text-xl text-red-400 ml-2">NEWSLETTER</h2>
-        <h1 class="font-bold text-4xl py-8 ml-2">Get Up To $100 Off Just Buy<span class="text-indigo-500">
-                Subscribe</span> Newsletter!
-        </h1>
-        <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
-        <input type="text" placeholder="your email..." class="bg-white text-black px-4 py-2 rounded-3xl">
-        <button class="bg-red-400 w-full mt-4 px-8 py-2 rounded-3xl text-white font-semibold">SUBSCRIBE NOW</button>
-    </section>
-</div>
+            <h2 class="font-bold text-xl text-red-400 ml-2">Our Shop</h2>
+            <h1 class="font-bold text-4xl py-8 ml-2">Go Pre-Order By & Get Best <span
+                    class="text-indigo-500">Prices</span>
+                For You !
+            </h1>
+            <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+            <button class="bg-red-400 w-fit mt-4 px-8 py-2 rounded-3xl text-white font-semibold">SHOP NOW</button>
+        </section>
+        <img src="img/roboto.png" class="h-100 rounded-3xl absolute -z-1 left-[35%] hidden md:flex" alt="">
+        <section class="text-left mt-16 m-auto w-9/10 bg-gray-300 rounded-3xl p-4 grid">
+            <h2 class="font-bold text-xl text-red-400 ml-2">NEWSLETTER</h2>
+            <h1 class="font-bold text-4xl py-8 ml-2">Get Up To $100 Off Just Buy<span class="text-indigo-500">
+                    Subscribe</span> Newsletter!
+            </h1>
+            <p>Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt.</p>
+            <input type="text" placeholder="your email..." class="bg-white text-black px-4 py-2 rounded-3xl">
+            <button class="bg-red-400 w-full mt-4 px-8 py-2 rounded-3xl text-white font-semibold">SUBSCRIBE NOW</button>
+        </section>
+    </div>
     <footer class="text-center bg-indigo-400 rounded-t-[5rem] mt-4 pb-32">
         <p>Done in &copy; 2025 . by Victor Ansima with ❤️.</p>
     </footer>
