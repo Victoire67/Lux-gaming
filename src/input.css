@@ -13,3 +13,6 @@
 .rounded-bg{
     border-radius: 0% 0% 30% 30%;
 }
+.rounded-footer{
+    border-radius: 20% 20% 0% 0%;
+}
